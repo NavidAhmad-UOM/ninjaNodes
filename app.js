@@ -5,7 +5,7 @@ const schema = require('./schema/schema');
 const mongoose = require('mongoose');
 
 //connect to mLab database
-mongoose.connect('mongodb+srv://test:test@cluster0-z4aus.mongodb.net/test?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://test:test@cluster0-creib.mongodb.net/test?retryWrites=true&w=majority',
 { useNewUrlParser: true,useUnifiedTopology: true });
 mongoose.connection.once('open',()=>{
     console.log('connected to mongoose database');
